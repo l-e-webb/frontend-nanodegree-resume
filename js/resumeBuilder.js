@@ -14,7 +14,7 @@ var bio = {
 		"github" : "https://github.com/l-e-webb",
 		"location" : "Portland, OR"
 	},
-	"bioPic" : "./images/louisprofilepic.jpg"
+	"bioPic" : "./images/louisprofilepic.JPG"
 	
 };
 
