@@ -4,6 +4,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #bcc8ff;
+}
+
 .clearfix {
   overflow: auto;
 }
@@ -11,11 +15,11 @@
 .education-entry, .work-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 10px;
 }
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
   line-height: 48px;
   display: inline;
 }
@@ -23,7 +27,6 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
   line-height: 29px;
   padding: 10px;
 }
@@ -52,18 +55,13 @@ h2, h3, h4, h5 {
 .date-text {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
   line-height: 16px;
-  float: left;
 }
 
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
   line-height: 16px;
-  float: right;
-
 }
 
 p {
@@ -75,48 +73,55 @@ p {
 a {
   color: #1199C3;
   text-decoration: none;
-  margin-top: 10px;
   display: block;
 }
 
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #F3F3F3;
   line-height: 28px;
 }
 
 #skillsH3 {
-  color: #F5AE23;
   display: none;
 }
 
-.orange {
-  background-color: #F5AE23;
+.contact-item {
+    font-weight: bold;
 }
 
-.orange-text {
-  color: #F5AE23;
+.section {
+    max-width: 960px;
+    margin: auto;
+    padding-bottom: 10px;
+    clear:both;
 }
 
-.white-text {
-  font-weight: bold;
-  color: #FFFFFF;
+.lighter-blue {
+  background-color: #e3e8ff;
 }
 
-.gray {
-  background-color: #F3F3F3;
-  padding-bottom: 10px;
-  clear:both;
+.light-blue {
+  background-color: #bcc8ff;
 }
 
-.dark-gray {
-  background-color: #4A4A4A;
+.deep-blue {
+  background-color: #3259ff;
 }
 
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848;
+#headerOuter {
+  background-image: url(../images/aurora.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#headerInner {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.footer-element {
+    color: white;
 }
 
 .flex-box {
@@ -126,6 +131,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+}
+
+.date-and-loc-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .center-content {
@@ -142,7 +154,7 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 300px;
   display: none;
 }
 
