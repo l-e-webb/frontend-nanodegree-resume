@@ -190,7 +190,7 @@ span {
 
 @media only screen and (max-width:900px) {
   .biopic {
-    width: 175px;
+    width: 225px;
   }
 }
 
@@ -199,7 +199,7 @@ span {
     margin-top: 10%;
   }
   .biopic {
-    width: 150px;
+    width: 175px;
   }
   .welcome-message {
     display: none;
@@ -220,7 +220,7 @@ span {
 }
 
 @media only screen and (min-width: 750px) {
-  #skillsH3,
+  #skillsH3, #langsH3,
   .biopic {
     display: block;
   }
