@@ -98,13 +98,15 @@ function initializeMap() {
     // iterates through school locations and appends each location to
     // the locations array
     for (var school in education.schools) {
-      locations.push(education.schools[school].location);
+      var loc = education.schools[school].location;
+      if (locations.indexOf(loc) == -1) locations.push(loc);
     }
 
     // iterates through work locations and appends each location to
     // the locations array
     for (var job in work.jobs) {
-      locations.push(work.jobs[job].location);
+      var loc = work.jobs[job].location;
+      if (locations.indexOf(loc) == -1) locations.push(loc);
     }
 
     return locations;
@@ -173,7 +175,6 @@ function initializeMap() {
 
     // Iterates through the array of locations, creates a search object for each location
     for (var place in locations) {
-
       // the search request object
       var request = {
         query: locations[place]

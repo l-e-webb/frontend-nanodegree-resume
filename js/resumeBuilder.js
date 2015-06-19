@@ -1,9 +1,8 @@
 var bio = {
 	"name" : "Louis Webb",
 	"role" : "Web Developer, Game Designer",
-	"welcomeMessage" : "Haven't decided on welcome message yet",
 	"skills" : [
-		"Web Development", "Game Design", "Mathematics", "Tutoring", "Educational Content Development"
+		"Web Development", "Game Design", "Mathematics", "Tutoring", "Programming", "Educational Content Development"
 	],
 	"plangs" : [
 	    "JavaScript", "HTML & CSS", "Java", "Python", "Lua", "LaTeX"
@@ -12,7 +11,7 @@ var bio = {
 		"mobile" : "(917) 562 9896",
 		"email" : "louis.webb5@gmail.com",
 		"github" : "https://github.com/l-e-webb",
-		"location" : "Portland, OR"
+		"location" : "Palo Alto, CA"
 	},
 	"bioPic" : "./images/louisprofilepic.JPG"
 	
@@ -53,10 +52,24 @@ var education = {
 var work = {
 	"jobs" : [
 		{
+			"employer": "Udacity",
+			"title": "Course Support Specialist",
+			"location": "Mountain View, CA",
+			"dates": "May 2015 - Present",
+			"description": "To come."
+		},
+		{
+			"employer": "Whitworth & Becker, CPA",
+			"title": "Tax Preperation Assistant",
+			"location": "Portland, OR",
+			"dates": "February 2015 - April 2015",
+			"description": "To come."
+		},
+		{
 			"employer" : "American Institutes for Research, Freelance",
 			"title" : "Math Content Developer",
 			"location" : "Portland, OR",
-			"dates" : "May 2012 - Present",
+			"dates" : "May 2012 - December 2014",
 			"description" : "Write materials such as worksheets, lesson plans, and multiple-choice questions (with student-facing feedback) intended for use as teaching resource and in standardized testing. Explore contemporary pedagogical challenges facing K-12 mathematics teachers and students, and calibrated content for all grade levels with a view toward innovation and conceptual clarity."
 		},
 		{
@@ -122,11 +135,11 @@ var projects = {
 
 
 bio.display = function() {
-	$("#headerInner").prepend(HTMLheaderRole.replace("%data%", bio.role));
-	$("#headerInner").prepend(HTMLheaderName.replace("%data%", bio.name));
+	$("#headerNameInner").append(HTMLheaderName.replace("%data%", bio.name));
+	$("#headerNameInner").append(HTMLheaderRole.replace("%data%", bio.role));
+	
 	bio.displayContacts("top");
 	$("#headerInner").append(HTMLbioPic.replace("%data%", bio.bioPic));
-	$("#headerInner").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
 	if (bio.skills != []) {
 		$("#headerInner").append(HTMLskillsStart);
 		for (var i = 0; i<bio.skills.length; i++) {

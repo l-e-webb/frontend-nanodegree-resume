@@ -34,7 +34,7 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000000;
+  /*color: #000000;*/
   line-height: 22px;
 }
 
@@ -76,10 +76,8 @@ a {
   display: block;
 }
 
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  line-height: 28px;
+#headerInner{
+  
 }
 
 #skillsH3 {
@@ -97,6 +95,10 @@ a {
     clear:both;
 }
 
+.blue-text {
+  color: #0052B0;
+}
+
 .lighter-blue {
   background-color: #e3e8ff;
 }
@@ -107,17 +109,6 @@ a {
 
 .deep-blue {
   background-color: #3259ff;
-}
-
-#headerOuter {
-  background-image: url(../images/aurora.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#headerInner {
-    max-width: 1024px;
-    margin: auto;
 }
 
 .footer-element {
